@@ -11,4 +11,4 @@ RUN cd /tmp/build && mvn clean package \
         && cd / && rm -rf /tmp/build
 VOLUME /tmp
 EXPOSE 8080
-ENTRYPOINT ["java","-war","/app.war"]
+ENTRYPOINT ["java","-jar","/app.war"]
